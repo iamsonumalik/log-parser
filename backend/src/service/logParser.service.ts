@@ -13,7 +13,6 @@ export default class LogParser {
         for await (const line of rl) {
             try {
                 let l = JSON.parse( JSON.stringify( line.trim() ) )
-
                 const regex = /(.+) - (.+) - (.+)/;
                 const match = l.match(regex);
                 if (match){
@@ -32,7 +31,6 @@ export default class LogParser {
             }
         }
 
-        console.log(parsedLogs);
         return parsedLogs;
     }
 }

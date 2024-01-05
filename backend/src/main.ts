@@ -20,6 +20,10 @@ app.post('/parse-log', upload.single('file'),async (req, res) => {
     }
 });
 
+app.get('/',async (req, res) => {
+    res.status(200).send("Welcome to Log Parser");
+});
+
 const PORT = 3001;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

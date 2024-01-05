@@ -50,7 +50,7 @@ This React frontend allows users to upload log files, parse them using the backe
 #### Installation
 1. Install dependencies:
    ```
-   cd frontend
+   cd frontend/log-parser
    npm install
    ```
 2. Start the development server
